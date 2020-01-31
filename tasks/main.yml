@@ -1,0 +1,6 @@
+---
+- name: enable developer mode
+  include: enable-developer-mode.yml
+
+- name: setup desktop defaults that make sense for developers (increase clarity and awareness)
+  include: defaults-for-dev-clarity.yml
