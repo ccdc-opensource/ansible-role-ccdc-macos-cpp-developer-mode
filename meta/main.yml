@@ -1,17 +1,16 @@
 ---
-    dependencies: []
-    
-    galaxy_info:
-    role_name: macos_cpp_developer_mode
-      author: rockdreamer
-      description: Set up developer mode on CCDC macOS build machines.
-      company: The Cambridge Crystallographic Data Centre
-      license: "license (BSD, MIT)"
-      min_ansible_version: 2.9
-      platforms:
-        - name: Darwin
-          versions:
-            - all
-      galaxy_tags:
-        - system
-    
+dependencies: []
+
+galaxy_info:
+  role_name: macos_cpp_developer_mode
+  author: rockdreamer
+  description: Set up developer mode on CCDC macOS build machines.
+  company: The Cambridge Crystallographic Data Centre
+  license: "license (BSD, MIT)"
+  min_ansible_version: 2.9
+  platforms:
+    - name: Darwin
+      versions:
+        - all
+  galaxy_tags:
+    - system
