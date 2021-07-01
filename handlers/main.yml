@@ -1,4 +1,3 @@
 ---
-  - name: Restart Finder
-    shell: killall Finder
-
+- name: Restart Finder # noqa: command-instead-of-shell
+  shell: killall Finder

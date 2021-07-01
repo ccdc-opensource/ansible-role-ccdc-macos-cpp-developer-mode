@@ -70,7 +70,7 @@
     - Restart Finder
 
 - name: Disable automatic capitalization as it’s annoying when typing code
-  become: yes
+  become: true
   osx_defaults:
     domain: NSGlobalDomain
     key: NSAutomaticCapitalizationEnabled
@@ -79,7 +79,7 @@
     state: present
 
 - name: Disable smart dashes as they’re annoying when typing code
-  become: yes
+  become: true
   osx_defaults:
     domain: NSGlobalDomain
     key: NSAutomaticDashSubstitutionEnabled
@@ -88,7 +88,7 @@
     state: present
 
 - name: Disable automatic period substitution as it’s annoying when typing code
-  become: yes
+  become: true
   osx_defaults:
     domain: NSGlobalDomain
     key: NSAutomaticPeriodSubstitutionEnabled
@@ -97,7 +97,7 @@
     state: present
 
 - name: Disable smart quotes as they’re annoying when typing code
-  become: yes
+  become: true
   osx_defaults:
     domain: NSGlobalDomain
     key: NSAutomaticQuoteSubstitutionEnabled
@@ -106,7 +106,7 @@
     state: present
 
 - name: Disable auto-correct
-  become: yes
+  become: true
   osx_defaults:
     domain: NSGlobalDomain
     key: NSAutomaticSpellingCorrectionEnabled
@@ -116,7 +116,7 @@
 
 # This stops the graphical python window from popping up a message all the time if it crashed
 - name: Disable close windows when quitting an app
-  become: yes
+  become: true
   osx_defaults:
     domain: NSGlobalDomain
     key: NSQuitAlwaysKeepsWindows
