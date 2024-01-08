@@ -1,6 +1,6 @@
 ---
 - name: enable developer mode
-  include_task: enable-developer-mode.yml
+  include_tasks: enable-developer-mode.yml
 
 - name: setup desktop defaults that make sense for developers (increase clarity and awareness)
-  include_task: defaults-for-dev-clarity.yml
+  include_tasks: defaults-for-dev-clarity.yml
