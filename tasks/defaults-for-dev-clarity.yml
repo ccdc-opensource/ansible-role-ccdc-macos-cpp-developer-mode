@@ -8,7 +8,6 @@
     state: present
   notify:
     - Restart Finder
-  become: yes
 
 - name: Show External Drives on the Desktop
   osx_defaults:
