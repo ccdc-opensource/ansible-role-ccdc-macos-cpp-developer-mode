@@ -8,6 +8,7 @@
     state: present
   notify:
     - Restart Finder
+  become: true
 
 - name: Show External Drives on the Desktop
   osx_defaults:
@@ -18,6 +19,7 @@
     state: present
   notify:
     - Restart Finder
+  become: true
 
 - name: Show Removable Media on the Desktop
   osx_defaults:
@@ -28,6 +30,7 @@
     state: present
   notify:
     - Restart Finder
+  become: true
 
 - name: Show Hidden Files
   osx_defaults:
@@ -38,6 +41,7 @@
     state: present
   notify:
     - Restart Finder
+  become: true
 
 - name: Show File Extensions
   osx_defaults:
@@ -48,6 +52,7 @@
     state: present
   notify:
     - Restart Finder
+  become: true
 
 - name: Show the Status Bar in Finder
   osx_defaults:
@@ -58,6 +63,7 @@
     state: present
   notify:
     - Restart Finder
+  become: true
 
 - name: Show the Path Bar in Finder
   osx_defaults:
@@ -68,6 +74,7 @@
     state: present
   notify:
     - Restart Finder
+  become: true
 
 - name: Disable automatic capitalization as it’s annoying when typing code
   become: true
@@ -77,6 +84,7 @@
     type: bool
     value: false
     state: present
+  become: true
 
 - name: Disable smart dashes as they’re annoying when typing code
   become: true
@@ -86,6 +94,7 @@
     type: bool
     value: false
     state: present
+  become: true
 
 - name: Disable automatic period substitution as it’s annoying when typing code
   become: true
@@ -95,6 +104,7 @@
     type: bool
     value: false
     state: present
+  become: true
 
 - name: Disable smart quotes as they’re annoying when typing code
   become: true
@@ -104,6 +114,7 @@
     type: bool
     value: false
     state: present
+  become: true
 
 - name: Disable auto-correct
   become: true
@@ -113,6 +124,7 @@
     type: bool
     value: false
     state: present
+  become: true
 
 # This stops the graphical python window from popping up a message all the time if it crashed
 - name: Disable close windows when quitting an app
@@ -123,3 +135,4 @@
     type: bool
     value: false
     state: present
+  become: true
