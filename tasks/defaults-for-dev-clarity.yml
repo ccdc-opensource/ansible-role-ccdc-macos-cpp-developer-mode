@@ -1,6 +1,6 @@
 ---
 - name: Show Drives on the Desktop
-  osx_defaults:
+  community.general.osx_defaults:
     domain: com.apple.finder
     key: ShowHardDrivesOnDesktop
     type: bool
@@ -10,7 +10,7 @@
     - Restart Finder
 
 - name: Show External Drives on the Desktop
-  osx_defaults:
+  community.general.osx_defaults:
     domain: com.apple.finder
     key: ShowExternalHardDrivesOnDesktop
     type: bool
@@ -20,7 +20,7 @@
     - Restart Finder
 
 - name: Show Removable Media on the Desktop
-  osx_defaults:
+  community.general.osx_defaults:
     domain: com.apple.finder
     key: ShowRemovableMediaOnDesktop
     type: bool
@@ -30,7 +30,7 @@
     - Restart Finder
 
 - name: Show Hidden Files
-  osx_defaults:
+  community.general.osx_defaults:
     domain: com.apple.finder
     key: AppleShowAllFiles
     type: bool
@@ -40,7 +40,7 @@
     - Restart Finder
 
 - name: Show File Extensions
-  osx_defaults:
+  community.general.osx_defaults:
     domain: NSGlobalDomain
     key: AppleShowAllExtensions
     type: bool
@@ -50,7 +50,7 @@
     - Restart Finder
 
 - name: Show the Status Bar in Finder
-  osx_defaults:
+  community.general.osx_defaults:
     domain: com.apple.finder
     key: ShowStatusBar
     type: bool
@@ -60,7 +60,7 @@
     - Restart Finder
 
 - name: Show the Path Bar in Finder
-  osx_defaults:
+  community.general.osx_defaults:
     domain: com.apple.finder
     key: ShowPathbar
     type: bool
@@ -71,7 +71,7 @@
 
 - name: Disable automatic capitalization as it’s annoying when typing code
   become: true
-  osx_defaults:
+  community.general.osx_defaults:
     domain: NSGlobalDomain
     key: NSAutomaticCapitalizationEnabled
     type: bool
@@ -80,7 +80,7 @@
 
 - name: Disable smart dashes as they’re annoying when typing code
   become: true
-  osx_defaults:
+  community.general.osx_defaults:
     domain: NSGlobalDomain
     key: NSAutomaticDashSubstitutionEnabled
     type: bool
@@ -89,7 +89,7 @@
 
 - name: Disable automatic period substitution as it’s annoying when typing code
   become: true
-  osx_defaults:
+  community.general.osx_defaults:
     domain: NSGlobalDomain
     key: NSAutomaticPeriodSubstitutionEnabled
     type: bool
@@ -98,7 +98,7 @@
 
 - name: Disable smart quotes as they’re annoying when typing code
   become: true
-  osx_defaults:
+  community.general.osx_defaults:
     domain: NSGlobalDomain
     key: NSAutomaticQuoteSubstitutionEnabled
     type: bool
@@ -107,7 +107,7 @@
 
 - name: Disable auto-correct
   become: true
-  osx_defaults:
+  community.general.osx_defaults:
     domain: NSGlobalDomain
     key: NSAutomaticSpellingCorrectionEnabled
     type: bool
@@ -117,7 +117,7 @@
 # This stops the graphical python window from popping up a message all the time if it crashed
 - name: Disable close windows when quitting an app
   become: true
-  osx_defaults:
+  community.general.osx_defaults:
     domain: NSGlobalDomain
     key: NSQuitAlwaysKeepsWindows
     type: bool
