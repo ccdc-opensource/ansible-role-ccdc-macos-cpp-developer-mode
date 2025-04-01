@@ -1,11 +1,11 @@
 ---
 - name: Check developer mode # noqa: no-changed-when
-  command: DevToolsSecurity -status
+  ansible.builtin.command: DevToolsSecurity -status
   register: DevToolsSecurity_status
   become: true
 
 - name: Activate developer mode
-  command: DevToolsSecurity -enable
+  ansible.builtin.command: DevToolsSecurity -enable
   register: DevToolsSecurity_activation
   when: '"Developer mode is currently disabled" in DevToolsSecurity_status.stdout'
   become: true
